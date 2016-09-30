@@ -5,7 +5,7 @@ function sayThatWasEasy() {
 
 $("#easy").on("click", sayThatWasEasy);
 
-$(document).keypress();
+$(document).keypress(delegatekeypress);
 
 function delegateKeypress(event) {
     if (event.charCode ==32) {
